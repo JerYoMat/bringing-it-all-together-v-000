@@ -55,7 +55,7 @@ class Dog
   def self.find_or_create_by(hash) 
     t = self.find_by_name(hash[:name])
       
-    end 
+  
       
   end 
   
