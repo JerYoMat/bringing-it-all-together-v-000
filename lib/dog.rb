@@ -45,9 +45,11 @@ class Dog
     SQL
     
    data = DB[:conn].execute(sql, id).first 
-   binding.pry 
-   self.create(data)
-   binding.pry 
+   hash_for_create = {name: => data[1],
+   breed: => data[2]}
+   new_dog = self.create(hash_for_create)
+   new_dog.id = data[0]
+   new_dog
   end 
   
 end 
