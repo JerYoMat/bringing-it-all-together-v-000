@@ -73,6 +73,6 @@ class Dog
    new_dog.id = data[0]
    new_dog
   end 
-  
+
   
 end 
