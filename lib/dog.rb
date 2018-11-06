@@ -40,13 +40,13 @@ class Dog
   end 
   
   def self.find_by_id(id) 
-    binding.pry 
     sql= <<-SQL 
     Select * from dogs where id = ?
     SQL
     
    data = DB[:conn].execute(sql, id).first 
    self.create(data)
+   binding.pry 
   end 
   
 end 
