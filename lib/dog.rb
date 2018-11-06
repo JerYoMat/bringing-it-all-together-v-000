@@ -53,8 +53,8 @@ class Dog
   end 
   
   def self.find_or_create_by(hash) 
-    if self.find_by_name(hash[:name])
-      binding.pry 
+    t = self.find_by_name(hash[:name])
+      
     end 
       
   end 
