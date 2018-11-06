@@ -44,7 +44,8 @@ class Dog
     Select * from dogs where id = ?
     SQL
     
-    DB[:conn].execute(sql, id)
+   data = DB[:conn].execute(sql, id).first 
+   self.create(data)
   end 
   
 end 
