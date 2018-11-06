@@ -56,4 +56,17 @@ class Dog
     
   end 
   
+  def find_by_name(name)
+    sql= <<-SQL 
+    Select * from dogs where name = ?
+    SQL
+    
+   data = DB[:conn].execute(sql, name).first 
+   hash_for_create = {:name => data[1],
+   :breed => data[2]}
+   new_dog = self.create(hash_for_create)
+   new_dog.id = data[0]
+   new_dog
+  end 
+  
 end 
