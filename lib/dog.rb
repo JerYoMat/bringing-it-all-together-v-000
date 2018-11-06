@@ -53,7 +53,7 @@ class Dog
   end 
   
   def self.find_or_create_by(hash) 
-    
+    binding.pry 
   end 
   
   def self.find_by_name(name)
