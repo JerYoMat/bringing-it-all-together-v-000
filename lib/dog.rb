@@ -56,7 +56,7 @@ class Dog
     
   end 
   
-  def self.ind_by_name(name)
+  def self.find_by_name(name)
     sql= <<-SQL 
     Select * from dogs where name = ?
     SQL
