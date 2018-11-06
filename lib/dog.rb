@@ -52,8 +52,8 @@ class Dog
    new_dog
   end 
   
-  def self.find_or_create_by(id) 
-    binding.pry 
+  def self.find_or_create_by(hash) 
+    
   end 
   
 end 
