@@ -81,7 +81,9 @@ class Dog
     dog 
   end 
   
-  def update
+  def update(input)
+    binding.pry 
+    
   end 
   
 end 
