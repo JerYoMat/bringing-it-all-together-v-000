@@ -45,6 +45,7 @@ class Dog
     SQL
     
    data = DB[:conn].execute(sql, id).first 
+   binding.pry 
    self.create(data)
    binding.pry 
   end 
