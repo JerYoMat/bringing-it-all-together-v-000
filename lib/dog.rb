@@ -69,7 +69,7 @@ class Dog
    new_dog
   end 
   
-  def self.new_from_db(input)
+  def self.new_from_db(data)
      hash_for_create = {:name => data[1],
    :breed => data[2]}
    new_dog = self.create(hash_for_create)
